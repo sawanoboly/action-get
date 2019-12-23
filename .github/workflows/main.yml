@@ -9,10 +9,11 @@ jobs:
 
     steps:
     - uses: sawanoboly/action-set@master
+      id: setter
       with:
         who-to-greet: Hello 
     - name: Run an env
-      run: echo ${{ outputs.time }}
+      run: echo ${{ setter.outputs.time }}
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
