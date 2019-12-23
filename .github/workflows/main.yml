@@ -10,6 +10,8 @@ jobs:
     steps:
     - uses: sawanoboly/action-set@master
       id: setter
+      env:
+        SECRET_ENV: ${{ secrets.SECRET_KEY }}
       with:
         who-to-greet: Hello 
     - name: Run an env_time
