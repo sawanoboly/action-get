@@ -11,8 +11,8 @@ jobs:
     - uses: sawanoboly/action-set@master
       with:
         who-to-greet: Hello 
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Run an env
+      run: env
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
