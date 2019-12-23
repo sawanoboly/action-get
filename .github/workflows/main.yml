@@ -12,7 +12,7 @@ jobs:
       with:
         who-to-greet: Hello 
     - name: Run an env
-      run: env
+      run: echo ${{ outputs.time }}
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
