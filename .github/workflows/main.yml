@@ -17,7 +17,7 @@ jobs:
     - name: Run an env_time
       run: echo ${env_time}
     - name: Run an from_python
-      run: echo ${from_python}
+      run: echo ${{ steps.setter.outputs.time }}
     - name: Run an ENV_TIME
       run: echo ${ENV_TIME}
     - name: Run a multi-line script
